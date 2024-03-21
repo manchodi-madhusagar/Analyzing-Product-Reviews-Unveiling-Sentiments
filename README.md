@@ -42,7 +42,7 @@ This project focuses on analyzing product reviews by employing various NLP techn
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your_username/analyzing-product-reviews.git
+   git clone https://github.com/manchodi-madhusagar/Analyzing-Product-Reviews-Unveiling-Sentiments.git
    ```
 
 2. Install the required dependencies:
