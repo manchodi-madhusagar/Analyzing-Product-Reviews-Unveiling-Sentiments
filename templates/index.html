@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <style>
+        /* Styles for the document body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light gray background */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styles for the main container */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #012d50; /* White container background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styles for the heading */
+        h1 {
+            color: #d44e4e; /* Blue heading */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Styles for labels */
+        label {
+            font-weight: bold;
+            color: #90151b; /* Dark gray label */
+        }
+
+        /* Styles for text areas */
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da; /* Light gray border */
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        /* Styles for submit button */
+        input[type="submit"] {
+            background-color: #007bff; /* Blue submit button */
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Styles for submit button hover effect */
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        /* Styles for the image */
+        img {
+            display: block;
+            margin: auto;
+            width: 550px; /* Adjust width as needed */
+            height: 250px; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <!-- Main container for the form -->
+    <div class="container">
+        <!-- Image -->
+        <img src="https://anilimages.s3.amazonaws.com/_c5aa1284-8297-4054-9e18-170fee811366.jpeg" alt="Placeholder Image" style="display: block; margin: 0 auto;">
+        <!-- Heading for the form -->
+        <h1>Analyzing Product Reviews: Unveiling Sentiments</h1>
+        
+        <!-- Form for submitting reviews -->
+        <form action="/predict" method="post">
+            <!-- Label for the review input -->
+            <label for="review">Enter your review here:</label><br>
+            <!-- Text area for entering review -->
+            <textarea id="review" name="review" rows="4" required></textarea><br>
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
